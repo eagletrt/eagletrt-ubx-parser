@@ -1,4 +1,4 @@
-# eagletrt-ubx-parser
+# ubx-parser
 
 A nodejs program for [@eagletrt](https://github.com/eagletrt) to parse GGA GLL and RMC messages of ubx files to csv or json.
 
