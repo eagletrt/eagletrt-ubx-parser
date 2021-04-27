@@ -2,8 +2,6 @@
 
 A nodejs program for [@eagletrt](https://github.com/eagletrt) to parse GGA GLL and RMC messages of ubx files to csv or json.
 
-**Note:**: This repository has been moved to the **[eagletrt organization](https://github.com/eagletrt/eagletrt-ubx-parser)**.
-
 ## Project purpose
 
 The **telemetry of eagletrt** uses two high-precision **GPS**, one as **base-station** and another in the car as a **rover**. 
