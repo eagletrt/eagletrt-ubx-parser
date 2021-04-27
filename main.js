@@ -1,12 +1,14 @@
 const fs = require('fs');
 const path = require('path');
-const chalk = require('chalk');
+const { Logger } = require('euberlog');
+
 const utils = require('./utils');
 const { TYPE, INPUTS } = require('./config.json');
 
+const logger = new Logger();
+
 INPUTS.forEach(input => {
-    const reading = chalk.cyan('[READING]');
-    console.log(`${reading} inputs/${input}.ubx`);
+    logger.info(`READING inputs/${input}.ubx`);
 
     const inputPath = path.join(__dirname, 'inputs', `${input}.ubx`);
     const rows = fs.readFileSync(inputPath, 'utf-8').split('\n');
@@ -21,6 +23,6 @@ INPUTS.forEach(input => {
     const outputText = TYPE === 'CSV' ? utils.getCsvData(data) : utils.getJsonData(data);
     fs.writeFileSync(outputPath, outputText);
 
-    const written = chalk.green('[WRITTEN]');
-    console.log(`${written} outputs/${input}.${outputExtension}\n`);
+    logger.success(`WRITTEN outputs/${input}.${outputExtension}`);
+    logger.br();
 }); 
