@@ -1,5 +1,5 @@
 {
-  "name": "eagletrt-ubx-parser",
+  "name": "ubx-parser",
   "version": "1.0.0",
   "description": "A nodejs program to parse GGA GLL and RMC messages of ubx files to csv or json",
   "main": "main.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/euberdeveloper/eagletrt-ubx-parser.git"
+    "url": "git+https://github.com/euberdeveloper/ubx-parser.git"
   },
   "keywords": [
     "ubx",
@@ -20,10 +20,10 @@
   "author": "Eugenio Vinicio Berretta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/euberdeveloper/eagletrt-ubx-parser/issues"
+    "url": "https://github.com/euberdeveloper/ubx-parser/issues"
   },
-  "homepage": "https://github.com/euberdeveloper/eagletrt-ubx-parser#readme",
+  "homepage": "https://github.com/euberdeveloper/ubx-parser#readme",
   "dependencies": {
-    "chalk": "^3.0.0"
+    "euberlog": "^2.0.17"
   }
 }
