@@ -11,7 +11,7 @@ format such as **json** and **csv**.
 
 ## How it was made
 
-The project is a very simple **NodeJS** program and uses no third-party module but chalk for a colourful log.
+The project is a very simple **NodeJS** program and uses no third-party module but euberlog for a colourful log.
 
 ## How to use it
 
